@@ -6,7 +6,7 @@ type Todo = {
   complete: boolean;
 }
 
-const todos = [
+const todos: Array<Todo> = [
   { text: 'Do laundry', complete: false },
   { text: 'Grocery list', complete: true }
 ];
