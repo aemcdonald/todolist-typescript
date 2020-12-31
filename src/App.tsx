@@ -1,6 +1,6 @@
 import React from 'react';
 import { TodoListItem } from './TodoListItem';
-import { todo } from './types';
+import { Todo } from './types';
 
 const todos: Array<Todo> = [
   { text: 'Do laundry', complete: false },
