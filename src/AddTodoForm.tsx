@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 export const AddTodoForm: React.FC = props => {
   const [newTodo, setNewTodo] = useState('');
 
-  const handleChange = event => {
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setNewTodo(event.target.value);
   };
   return (
