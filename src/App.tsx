@@ -7,10 +7,25 @@ const initialTodos: Array<Todo> = [
 ];
 
 const App: React.FC = () => {
-  const [todos, setTodos] = useState(initialTodos)
-  return (<>
-    <TodoListItem todo={todos[0]}/>
-  </>)
+  const [todos, setTodos] = useState(initialTodos);
+
+  const toggleTodo = selectedTodo => {
+    const newTodos = todos.map(todo => {
+      if (todo === selectedTodo) {
+        return {
+          ...todo,
+          complete: !todo.complete
+        };
+      }
+      return todo;
+    });
+  };
+
+  return (
+    <>
+      <TodoListItem todo={todos[0]} />
+    </>
+  );
 };
 
 export default App;
