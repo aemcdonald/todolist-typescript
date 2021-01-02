@@ -4,7 +4,7 @@ export const AddTodoForm: React.FC = props => {
   const [newTodo, setNewTodo] = useState('');
   return (
     <form>
-      <input type='text' />
+      <input type='text' value={newTodo} />
       <button type='submit'>Add Todo</button>
     </form>
   );
