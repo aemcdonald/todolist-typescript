@@ -19,6 +19,7 @@ const App: React.FC = () => {
       }
       return todo;
     });
+    setTodos(newTodos);
   };
 
   return (
